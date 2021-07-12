@@ -1,5 +1,5 @@
 FROM openjdk:8
 
-COPY target/*.jar myapp.jar
+COPY target/*.war myapp.war
 
-ENTRYPOINT [ "java" , "-jar" , "myapp.jar" ]
+ENTRYPOINT [ "java" , "-war" , "myapp.war" ]
